@@ -61,12 +61,43 @@ img{
     grid-template-columns: 1.5fr 8fr 2.5fr;
 }
 
+.thing__item--content a{
+    font-weight: bolder;
+}
+
 .thing__item--img{
     width: 70px;
     height: 70px;
     border-style: groove;
     border-radius: 5px;
     border-width: 1.5px;
+    overflow: hidden;
+}
+
+.thing__item--price{
+    justify-content: center;
+}
+
+.changenumber{
+    display:flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.change__decrease, .change__increase{
+    background-color: rgba(14, 150, 247,0.4);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    text-align: center;
+    padding: auto;
+}
+
+.changenumber input{
+    width: 30px;
+    border-style: none;
+    text-align: center;
 }
 
 /* ---------------------------------------------------------------------------------------------- */
