@@ -11,6 +11,7 @@
       src="https://kit.fontawesome.com/6dff643abc.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" href="assets\img\logo.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="cart__layout"> <!--lop tong the-->
@@ -26,7 +27,9 @@
                     , quý khách vui lòng kiểm tra sản phẩm, số lượng, giá, màu sắc và điền các thông tin dưới đây:
                 </P>
                 <hr>
+                <!-- -----------------------------cac san pham----------------------- -->
                 <div class="things">
+                    <!-- ------------------san pham 1------------------------- -->
                     <div class="thing__item">
                         <div class="thing__item--img">
                             <img src="assets/img/item1.jpg" alt="">
@@ -41,7 +44,7 @@
                         </div>
                         <div class="thing__item--price">
                             <span style="color: #999; text-decoration: line-through;">32.000.000đ</span><br>
-                            <span >28.000.000đ</span><br>
+                            <span>28.000.000đ</span><br>
                             <input type="hidden" value="28000000">
                             <b style="color:red;">Tổng: 28.000.000đ</b>
                             <div class="changenumber">
@@ -51,7 +54,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- --------------------------------------------------------- -->
                     <hr>
+                    <!-- -------------------------san pham 2---------------------- -->
                     <div class="thing__item">
                         <div class="thing__item--img">
                             <img src="assets\img\item2.jpg" alt="">
@@ -75,7 +80,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- --------------------------------------------------------- -->
                     <hr>
+                    <!-- -------------------------san pham 3---------------------- -->
                     <div class="thing__item">
                         <div class="thing__item--img">
                             <img src="assets/img/item3.jpg" alt="">
@@ -100,14 +107,106 @@
                             </div>
                         </div>
                     </div>
-                    <hr>
+                    <!-- --------------------------------------------------------- -->
                 </div>
+                <!-- ------------------------------------------------------------------------------ -->
+                <hr>
+                <!-- --------------------------------------thanh toan------------------------------------ -->
                 <div class="total">
-                    <div class="total__voucher"></div>
-                    <div class="total__price"></div>
+                    <div class="total__voucher">
+                        <p style="font-weight: bolder; color: red;">Mã giảm giá</p>
+                        <input type="text" placeholder="helloworld123">
+                        <button><b>Áp dụng</b></button>
+                    </div>
+                    <div class="total__price">
+                        <span>Phí vận  chuyển: 0đ</span><br>
+                        <span>Phí dịch vụ: 0đ</span><br>
+                        <b style="color: red;">Tổng cộng: 100.000.000đ</b>
+                        <input type="hidden" value="100000000">
+                        <br>
+                        <span>Giảm giá: 0đ</span><br>
+                        <b style="color: red;">Thanh toán: 100.000.000đ</b>
+                        <input type="hidden" value="100000000">
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------------------------------- -->
+                <hr>
+                <div class="payments">
+                    <button class="btn btn-primary button__left"><b>Đặt hàng</b></button>
+                    <button class="btn btn-warning button__right"><b>Mua trả góp</b></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart__wrapper" style="margin-top: 10vh;">
+            <div class="container-fluid">
+                <h1 class="tagh1">ĐẶT HÀNG</h1>
+                <h2 class="tagh2">1. Thông tin khách hàng</h2>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="gender" id="gender__male">
+                    <label for="gender__male" class="form-check-label">Anh</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="gender" id="gender__female">
+                    <label for="gender__female" class="form-check-label">Chị</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form__item form-control" placeholder="Họ và tên">
+                    <input type="mail" class="form__item form-control" placeholder="Email">
+                    <input type="phone" class="form__item form-control" placeholder="Số điện thoại">
+                    <select class="form__item form-select" name="city" id="city">
+                        <option value="0">--Chọn Tỉnh/TP--</option>
+                        <option value="1">TP. Hồ Chí Minh</option>
+                        <option value="2">TP. Hà Nội</option>
+                        <option value="3">TP. Đà Nẵng</option>
+                    </select>
+                    <input type="text" class="form__item form-control" placeholder="Địa chỉ">
+                    <input type="text" class="form__item form-control" placeholder="Ghi chú">
+                </div>
+                <h2 class="tagh2">2. Hình thức thanh toán</h2>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="payment__methods" id="payment__method1">
+                    <label for="payment__method1">COD</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="payment__methods" id="payment__method2">
+                    <label for="payment__method2">Chuyển khoản</label>
+                </div>
+                <h2 class="tagh2">3. Hình thức vận chuyển</h2>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="trans__methods" id="trans__method1">
+                    <label for="trans__method1">Giao hàng tiết kiệm</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="trans__methods" id="trans__method2">
+                    <label for="trans__method2">Giao hàng nhanh</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="trans__methods" id="trans__method3">
+                    <label for="trans__method3">Giao hàng hỏa tốc</label>
+                </div>
+                <div class="butsubmit">
+                    <button class="btn btn-primary button__submit">GỬI ĐƠN HÀNG</button>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer__left">
+            <p>KẾT NỐI VỚI CHÚNG TÔI</p>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer__right">
+            <p>MỜI BẠN NHẬP EMAIL ĐỂ NHÂN KHUYẾN MÃI</p>
+            <div class="footer__right--voucher">
+                <input class="form-check-input" type="email" placeholder="Nhập email vào">
+                <button class="btn btn-warning">NHẬN MÃ</button>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
